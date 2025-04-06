@@ -22,6 +22,7 @@ FEEDBACK = 1
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
+        "Bot created by RPA ZONE MEMBER"
         "Welcome to the Image Styler Bot!\n\n"
         "Send me any image, and I'll help you transform it into different styles.\n"
         "Available commands:\n"
@@ -119,7 +120,7 @@ async def receive_feedback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f"Feedback received from {user.full_name} (ID: {user.id}): {feedback}")
     
     await update.message.reply_text(
-        "Thank you for your feedback! It will help improve the bot."
+        "Thank you for your feedback! RPA bahot khush hoga sabasi dega ."
     )
     return ConversationHandler.END
 
